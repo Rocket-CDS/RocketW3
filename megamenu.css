@@ -1,0 +1,57 @@
+﻿/* Mega2DNN */
+ul.megamenu{margin:0;padding:0;float:left;list-style:none;}
+ul.megamenu, ul.megamenu li{list-style-type:none;}
+ul.megamenu li{position:relative;float:left;margin:0;padding:0;}
+ul.megamenu ul{padding:0;margin:0;}
+ul.megamenu li a{float:left;text-decoration:none;}
+ul.megamenu li .sub{position:absolute;top:130px;left:0;display:none;padding:22px;z-index:9000;}
+ul.megamenu li .sub a{text-align:left;}
+ul.megamenu li .sub ul{list-style:none;margin:0;padding:0;white-space:nowrap;}
+ul.megamenu .sub ul li{float:none;}
+ul.megamenu .sub ul li h2{padding:0;margin:0;font-size:11px;font-weight:normal;}
+ul.megamenu .sub ul li h2 a{padding:0;margin:0;}
+ul.megamenu .sub ul li a{float:none;text-indent:0; /*--Reset text indent--*/;display:block;text-decoration:none;color:#555454;padding:0;margin:0;}
+/* Modify here for styling */
+ul.megamenu{}
+ul.megamenu a{display:block;font-family:"Unica One", Arial, Helvetica, sans-serif;color:#342d2c;font-size:24px;height:130px;margin-left:30px;line-height:130px;text-align:center;text-transform:uppercase;font-weight:500;position:relative;}
+ul.megamenu li.level0:hover a, ul.megamenu li.level0 a:hover, .megahover{color:#f5474b;}
+ul.megamenu .current a{color:#f5474b;}
+#megamenu li.sublink{border-bottom:#6d98c7 solid 1px;}
+#megamenu li.sublink:last-child{border-bottom:0;}
+#megamenu li.sublink a{background:none;font-size:13px;height:36px;line-height:34px;border:none;color:#ececec;}
+#megamenu li.sublink a:hover{color:white;}
+ul.megamenu li .sub{background:rgb(72, 126, 185);/* fallback color */background:rgba(72, 126, 185, 0.9);}
+li.menufirst a{margin-left:0 !important;}
+/* MobileMenu */
+/* Button */
+.navicon{background:#f5f5f5;}
+.navicon a{display:block;height:50px;line-height:50px;text-align:center;text-decoration:none !important;}
+.navicon a:before{font-family:'Font Awesome 5 Free';font-weight:900;content:"\f0c9";font-size:28px;color:#747474;}
+/* Menu */
+.mobilemenu ul{list-style:none;margin:0;padding:0 0 20px 0;font-family:"Unica One", Arial, Helvetica, sans-serif;font-size:24px;text-transform:uppercase;text-align:center;background:#f5f5f5;}
+.mobilemenu ul li{display:block;border-top:white solid 1px;}
+.mobilemenu ul li a{display:block;padding:10px 20px;text-decoration:none;color:#747474;}
+.mobilemenu ul li a:hover{color:#333;}
+/* PREQUERIES */
+.navicon, .mobilemenu{display:none;}
+
+/* for 1240px and less */
+@media screen and (max-width:1240px) {
+}
+/* for 1070px and less */
+@media screen and (max-width:1070px) {
+ul.megamenu a{margin-left:18px;}
+}
+/* for 980px and less - Only portrait for retina display */
+@media all and (max-width:980px),
+            screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 2940px) and (orientation: portrait),
+            screen and (-webkit-min-device-pixel-ratio: 2.0) and (max-width: 1960px) and (orientation: portrait) {
+#megamenu{display:none;}
+.navicon{display:block;}
+}
+/* for 640px and less */
+@media screen and (max-width:640px) {
+}
+/* for less than 380px (Iphone 7)*/
+@media screen and (max-width:380px) {
+}

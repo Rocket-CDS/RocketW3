@@ -1,0 +1,14 @@
+﻿<h3>W3.CSS Theme for Dnn</h3>
+Create by Nevoweb and WonderWebs <br/>
+David Lee - Nevoweb <br/>
+Robert Axford - WonderWebs.com <br/>
+<br />
+	<a href="mailto:info@nevoweb.tech">info@nevoweb.tech</a><br />
+	<a href=https://www.nevoweb.com>https://www.nevoweb.com</a><br />
+<hr/>
+	<h3>About the W3.CSS Theme</h3>
+
+	<h4>Version 01.00.00</h4><br />
+	Intial release
+
+</div>

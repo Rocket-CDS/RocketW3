@@ -1,0 +1,56 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="Nevoweb.Skins.RocketW3" type="Skin" version="01.00.01">
+      <friendlyName>RocketW3</friendlyName>
+      <description>A responsive DNN skin for W3.CSS</description>
+      <owner>
+        <name>David Lee / Robert Axford</name>
+        <organization>Nevoweb / WonderWebs</organization>
+        <url>https://www.nevoweb.com</url>
+        <email>info@nevoweb.tech</email>
+      </owner>
+      <azureCompatible>true</azureCompatible>
+      <license>GNU GENERAL PUBLIC LICENSE</license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">09.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>portals/_default/skins/RocketW3</basePath>
+            <resourceFile>
+              <name>ResourcesSkin.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+    
+    <package name="Nevoweb.Containers.RocketW3" type="Container" version="01.00.00">
+      <friendlyName>RocketW3</friendlyName>
+      <description>Containers for the RocketW3 Theme package.</description>
+      <owner>
+        <name>David Lee / Robert Axford</name>
+        <organization>Nevoweb / WonderWebs</organization>
+        <url>https://www.nevoweb.com</url>
+        <email>info@nevoweb.tech</email>
+      </owner>
+      <license>GNU GENERAL PUBLIC LICENSE</license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">09.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>portals/_default/Containers/RocketW3</basePath>
+            <resourceFile>
+              <name>ResourcesContainers.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>            
+    </package>
+  </packages>
+</dotnetnuke>
