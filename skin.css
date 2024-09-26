@@ -39,7 +39,7 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .segment{position: relative;box-sizing: border-box;}
 .aboveheader{}
 .aboveheader .w3-content{max-width:100%;} /* Full width */
-.segment.mainheader{box-shadow: 0 0 6px #00000070;z-index: 1;}
+.segment.mainheader{box-shadow: 0 0 6px #00000070;z-index: 1;min-height:90px;}
 .segment.belowheader{}
 .belowheader .w3-content{max-width:100%;} /* Full width */
 .segment.breadcrumbsearch{border-bottom:1px solid #eee;} /* display:none to hide breadcrumb and search */
@@ -67,7 +67,7 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .searchicon{height:1.5em;}
 
 /* Misc */
-.logopane img{display:block;margin:30px 0;}
+.logopane img{display:block;margin:30px 0;max-width: 120px;}
 .langpane{position:absolute;top:10px;right:10px;z-index:9100;font-family:'Lexend Deca', sans-serif;font-size:12px;text-transform:uppercase;font-weight:400;}
 .clearfix{clear:both;}
 .LoginPanel{width:auto !important;padding-right:0 !important;float:none !important;}
@@ -142,15 +142,4 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 /* DNN fixes */
 .dnnModuleManager:before{content:attr(data-name) !important;}
 .DNNEmptyPane.dnnModuleManager.dnnSortable{min-height:10px !important;}
-
-
-
-
-
-/* Stuff to move elsewhere */
-/* Hero Header */
-.ModRocketContentModC .topimageheader {height:500px; position:relative;}
-.ModRocketContentModC .caption {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);text-align:center;}
-.ModRocketContentModC .caption h2, .ModRocketContentModC .caption h3 {color: #ffffff;text-shadow: 0px 0px 4px #00000057;}
-
 
