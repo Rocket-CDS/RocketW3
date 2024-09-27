@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 body, .Normal{color:#444;font-size:1em;line-height:1.5em;} /* Default font size */
 body, .Normal, h1, h2, h3, h4, h5, h6{color:inherit;font-family:Arial, Helvetica, sans-serif;} /* Default font and colour, not size. Use long form CSS */
 h1{}
@@ -67,7 +67,7 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .searchicon{height:1.5em;}
 
 /* Misc */
-.logopane img{display:block;margin:30px 0;max-width: 120px;}
+.logopane img{display:block;margin:20px 0;max-width: 320px;max-height: 60px;}
 .langpane{position:absolute;top:10px;right:10px;z-index:9100;font-family:'Lexend Deca', sans-serif;font-size:12px;text-transform:uppercase;font-weight:400;}
 .clearfix{clear:both;}
 .LoginPanel{width:auto !important;padding-right:0 !important;float:none !important;}
@@ -108,8 +108,6 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .mobilemenu ul li ul li a {font-size: 16px;}
 .mobilemenu ul li a:hover {color: #02be8e;background: #fff;}
 
-
-
 /* Utilities */
 .centerthis,.centrethis{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}/* put position:relative and dimensions on parent */
 
@@ -124,7 +122,7 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .mainmenu{display:none;}
 .navicon{display:block;}
 .w3-mobile{display:block;width:100% !important;}
-.logopane img {margin: 15px 0;width: 80%;}
+.logopane img {margin: 15px 0;max-width: 80%;max-height: 44px;}
 }
 
 /* Desktop */
