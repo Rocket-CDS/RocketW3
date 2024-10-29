@@ -36,7 +36,7 @@ Paragraphs and headings will normally add vertical spacing within the content.
 https://www.w3schools.com/w3css/w3css_display.asp
 
 
-Within a module, to make mmultiple column content with space between each column, but still aligned left and right, use w3-row-padding w3-section w3-stretch as in this example:
+Within a module, to make multiple column content with space between each column, but still aligned left and right, use w3-row-padding w3-section w3-stretch as in this example:
 ```
  <div class="w3-row-padding w3-section w3-stretch">
   <div class="w3-col s4">

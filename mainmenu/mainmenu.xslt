@@ -26,15 +26,12 @@
 			<xsl:when test="$level=0">
 
 				<li>
-					<xsl:attribute name="class">
-						level0<xsl:if test="@breadcrumb = 1"> current</xsl:if><xsl:if test="@first = 1"> menufirst</xsl:if><xsl:if test="@last = 1"> menulast</xsl:if>
-					</xsl:attribute>
+					<xsl:attribute name="class">level0<xsl:if test="@breadcrumb = 1"> current</xsl:if><xsl:if test="@first = 1"> menufirst</xsl:if><xsl:if test="@last = 1"> menulast</xsl:if></xsl:attribute>
 					<a>
 						<xsl:choose>
 							<xsl:when test="@enabled = 1">
-								<xsl:attribute name="href">
-									<xsl:value-of select="@url"/>
-								</xsl:attribute>
+								<xsl:attribute name="href"><xsl:value-of select="@url"/></xsl:attribute>
+						        <xsl:attribute name="class">menutab<xsl:value-of select="@id"/></xsl:attribute>
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:attribute name="href">#</xsl:attribute>
@@ -63,15 +60,12 @@
 					<xsl:choose>
 						<xsl:when test="@enabled = 1">
 							<a>
-								<xsl:attribute name="href">
-									<xsl:value-of select="@url"/>
-								</xsl:attribute>
+								<xsl:attribute name="href"><xsl:value-of select="@url"/></xsl:attribute>
+					            <xsl:attribute name="class">menutab<xsl:value-of select="@id"/></xsl:attribute>
 								<xsl:value-of select="@text" />
 							</a>
 						</xsl:when>
-						<xsl:otherwise>
-							<xsl:value-of select="@text" />
-						</xsl:otherwise>
+						<xsl:otherwise><xsl:value-of select="@text" /></xsl:otherwise>
 					</xsl:choose>
 				</li>
 				<xsl:if test="node">
