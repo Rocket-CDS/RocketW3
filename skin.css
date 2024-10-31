@@ -143,5 +143,5 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 
 /* DNN fixes */
 .dnnModuleManager:before{content:attr(data-name) !important;}
-.DNNEmptyPane.dnnModuleManager.dnnSortable{min-height:10px !important;}
+div.dnnModuleManager.dnnSortable{min-height:10px !important;}
 
