@@ -1,0 +1,84 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path>App_LocalResources/</path>
+      <name>Skin.ascx.resx</name>
+    </file>
+    <file>
+      <path />
+      <name>default.ascx</name>
+    </file>
+    <file>
+      <path>Includes/</path>
+      <name>Includes.ascx</name>
+    </file>
+    <file>
+      <path>Includes/</path>
+      <name>Registrations.ascx</name>
+    </file>
+    <file>
+      <path>mainmenu/</path>
+      <name>hoverIntent.js</name>
+    </file>
+    <file>
+      <path>mainmenu/</path>
+      <name>mainmenu-menudef.xml</name>
+    </file>
+    <file>
+      <path>mainmenu/</path>
+      <name>mainmenu.cssxx</name>
+    </file>
+    <file>
+      <path>mainmenu/</path>
+      <name>mainmenu.js</name>
+    </file>
+    <file>
+      <path>mainmenu/</path>
+      <name>mainmenu.xslt</name>
+    </file>
+    <file>
+      <path />
+      <name>megamenu.css</name>
+    </file>
+    <file>
+      <path>MobileMenu/</path>
+      <name>menudef.xml</name>
+    </file>
+    <file>
+      <path>MobileMenu/</path>
+      <name>mobilemenu.css</name>
+    </file>
+    <file>
+      <path>MobileMenu/</path>
+      <name>MobileMenu.xslt</name>
+    </file>
+    <file>
+      <path />
+      <name>RocketW3-skin.zip.manifest</name>
+    </file>
+    <file>
+      <path />
+      <name>search-4-svgrepo-com.svg</name>
+    </file>
+    <file>
+      <path />
+      <name>search.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>skin.css</name>
+    </file>
+    <file>
+      <path />
+      <name>skin.doctype.xml</name>
+    </file>
+    <file>
+      <path />
+      <name>w3.css</name>
+    </file>
+    <file>
+      <path />
+      <name>wide.ascx</name>
+    </file>
+  </files>
+</dotnetnuke>
