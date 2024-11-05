@@ -34,20 +34,16 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 /* Main sections */
 .pageouter{}
 .pageinner{}
-.pageinner .w3-content{max-width:1280px;} /* Main content width */
-.wide .pageinner .w3-content{max-width:100%;} /* Main content width for wide layout */
+.pageinner .w3-content,.segment.contentfull .w3-container.default{max-width:1280px;margin: auto;} /* Boxed content width on Default skin*/
+.wide .pageinner .w3-content{max-width:100%;} /* Full width for all content on Wide skin */
 .segment{position: relative;box-sizing: border-box;}
 .aboveheader{}
 .aboveheader .w3-content{max-width:100%;} /* Full width */
-.abovefooter{}
-.abovefooter .w3-content{max-width:100%;} /* Full width */
 .segment.mainheader{box-shadow: 0 0 6px #00000070;z-index: 1;min-height:90px;}
 .segment.belowheader{}
 .belowheader .w3-content{max-width:100%;} /* Full width */
-.segment.belowfooter{}
-.belowfooter .w3-content{max-width:100%;} /* Full width */
 .segment.breadcrumbsearch{border-bottom:1px solid #eee;} /* display:none to hide breadcrumb and search */
-.segment.contentfull{}
+.segment.contentfull{max-width:100%;} /* Main content pane is always full width. Default container boxes the content. NoContainer stretches content. */
 .segment.contentleft{}
 .segment.contentright{}
 .segment.middlefull{}
