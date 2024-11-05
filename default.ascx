@@ -150,14 +150,6 @@
 		<!-- End semantic body html tag -->
 		<div class="footer">
 			<!-- Begin semantic footer html tag -->
-			<div class="segment abovefooter">
-				<div class="w3-content">
-					<div class="w3-row">
-						<div id="abovefooter" runat="server" class="" containername="RocketW3" containersrc="nocontainer.ascx" containertype="G">
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="segment footerthird">
 				<div class="w3-content">
 					<div class="w3-row">
@@ -174,14 +166,6 @@
 				<div class="w3-content">
 					<div class="w3-row">
 						<div id="footerfull" runat="server" class="" containername="RocketW3" containersrc="default.ascx" containertype="G">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="segment belowfooter">
-				<div class="w3-content">
-					<div class="w3-row">
-						<div id="belowfooter" runat="server" class="" containername="RocketW3" containersrc="nocontainer.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
