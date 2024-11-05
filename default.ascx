@@ -1,4 +1,4 @@
-﻿<!-- RocketCDS W3 Theme - Copyright 2023 agence-sesame.fr -->
+<!-- RocketCDS W3 Theme - Copyright 2023 agence-sesame.fr -->
 <%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
 <%@ Register TagPrefix="dnn" TagName="LANGUAGE" Src="~/Admin/Skins/Language.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="LOGO" Src="~/Admin/Skins/Logo.ascx" %>
@@ -66,7 +66,7 @@
 		<!-- End semantic header html tag  -->
 		<div class="main">
 			<!-- Begin semantic body html tag -->
-			<div class="segment contentfull">
+			<div class="segment contentfull fullwidth">
 				<div class="w3-content">
 					<div class="w3-row">
 						<div id="ContentPane" runat="server" class="" containername="RocketW3" containersrc="default.ascx" containertype="G">
@@ -94,7 +94,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="segment middlefull">
+			<div class="segment middlefull fullwidth">
 				<div class="w3-content">
 					<div class="w3-row">
 						<div id="middlefull" runat="server" class="" containername="RocketW3" containersrc="default.ascx" containertype="G">
@@ -138,7 +138,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="segment lowerfull">
+			<div class="segment lowerfull fullwidth">
 				<div class="w3-content">
 					<div class="w3-row">
 						<div id="lowerfull" runat="server" class="" containername="RocketW3" containersrc="default.ascx" containertype="G">
@@ -162,7 +162,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="segment footerfull">
+			<div class="segment footerfull fullwidth">
 				<div class="w3-content">
 					<div class="w3-row">
 						<div id="footerfull" runat="server" class="" containername="RocketW3" containersrc="default.ascx" containertype="G">
