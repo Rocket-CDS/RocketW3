@@ -30,12 +30,11 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .searchbutton{color:#c4c4c4;}
 .searchbutton:hover{color:#02be8e;}
 
-
 /* Main sections */
 .pageouter{}
 .pageinner{}
-.pageinner .w3-content,.segment.contentfull .w3-container.default{max-width:1280px;margin: auto;} /* Boxed content width on Default skin*/
-.segment.fullwidth .w3-content{max-width:100%;} /* All single column content panes are full width. The Default container boxes the content. NoContainer stretches the content. */
+.pageinner .w3-content,.segment.fullwidth .w3-container.default .DNNModuleContent > div,.segment.fullwidth .w3-container.boxed .containerinner{max-width:1280px;margin: auto;} /* Boxed content width on Default skin*/
+.segment.fullwidth .w3-content,.segment.fullwidth .w3-container.unboxed .containerinner{max-width:100%;} /* All single column content panes are full width. The Boxed container boxes the content. The Unboxed stretches the content. */
 .wide .pageinner .w3-content{max-width:100%;} /* Full width for all content on Wide skin */
 .segment{position: relative;box-sizing: border-box;}
 .aboveheader{}
@@ -57,10 +56,11 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .segment.copyright{background:#f2f2f2;}
 
 /* Containers */
-.containerouter{} /* Full width content wrapper for coloured backgrounds/images*/
-.containerinner{} /* Boxed content wrapper */
-.w3-container.nocontainer{padding:0;}
-.w3-container.nocontainer .containerinner{max-width: 1280px;margin: auto;}
+.w3-container.default{}/* Apply this container to DNN modules */
+.w3-container.boxed{padding:0;}
+.w3-container.boxed .containerinner{margin-top: 0 !important;margin-bottom: 0 !important;overflow: auto;}
+.w3-container.unboxed{padding:0;}
+.w3-container.unboxed .containerinner{margin-top: 0 !important;margin-bottom: 0 !important;overflow: auto;}
 
 /* Search */
 #dnn_dnnSearch_ClassicSearch{display:block;position:relative;}
