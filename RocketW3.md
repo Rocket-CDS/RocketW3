@@ -1,5 +1,34 @@
 # RocketW3 Skin
 
+This skin is primarily for use with the Rocket Suite of modules. The templates for these modules contain a couple of wrapper divs (containerouter and containerinner) that work with the skin.css to provide boxed (max 1280px) and unboxed (full-width) content within the single-column content rows. The multi-column rows are always boxed unless you set them to be full width via CSS.
+
+Content spacing:
+The skin provides horizontal spacing between content pane columns. 
+The containers provide neither vertical nor horizontal spacing. 
+Vertical spacing is expected to be provided by the module content.
+
+The supplied containers are:
+Boxed - This is automatically applied in all multi-column and single column rows.
+Unboxed - This is automatically applied in the Aboveheader, Belowheader and Footerfull panes.
+Default - This should be manually applied to any non-Rocket DNN module to provide boxed content.
+Titled - This is the same as Default but with the DNN Title feature present.
+
+Container usage:
+If you insert a Rocket module into Aboveheader, Belowheader or Footerfull, it will take up the entire space because it applies the unboxed container. This is useful for banners/sliders.
+
+If you insert a Rocket module into a single-column row such as the ContentPane, it will show the content boxed at up to 1280px width. If you would like that module to instead stretch to full-width, simply change the container to unboxed.
+
+Skin usage:
+Examine the skin.css for additional notes and the available selectors/classes.
+
+All page rows (segments), whether single or multi-column, can be separately styled with a background colour or image running the entire width of the page.
+
+Any multi-column row (segment) can be stretched to full-width with simple CSS. For example, the row with the 2 columns ColumnLeft and ContentRight is boxed by default, even when using unboxed containers. To stretch these columns to full-width you would use:
+.maincontentright .w3-content{max-width:100%;}
+
+
+Additional notes:
+
 W3 CSS breakpoints are 600, 992, 1205
 
 To make a site full-width stretchy:
