@@ -33,15 +33,15 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 /* Main sections */
 .pageouter{}
 .pageinner{}
-.pageinner .w3-content,.segment.fullwidth .w3-container.default .DNNModuleContent > div,.segment.fullwidth .w3-container.boxed .containerinner{max-width:1280px;margin: auto;} /* Boxed content width on Default skin*/
+.pageinner .w3-content,.segment.fullwidth .w3-container.default .DNNModuleContent div:first-child,.segment.fullwidth .w3-container.boxed .containerinner{max-width:1280px;margin: auto;} /* This is the boxed content width on Default skin*/
 .segment.fullwidth .w3-content,.segment.fullwidth .w3-container.unboxed .containerinner{max-width:100%;} /* All single column content panes are full width. The Boxed container boxes the content. The Unboxed stretches the content. */
-.wide .pageinner .w3-content{max-width:100%;} /* Full width for all content on Wide skin */
+.wide .pageinner .w3-content{max-width:100%;} /* Full width by default for all content on the Wide skin */
 .segment{position: relative;box-sizing: border-box;}
 .aboveheader{}
-.aboveheader .w3-content{max-width:100%;} /* Full width */
+.aboveheader .w3-content{max-width:100%;} /* Full width for banners*/
 .segment.mainheader{box-shadow: 0 0 6px #00000070;z-index: 1;min-height:90px;}
 .segment.belowheader{}
-.belowheader .w3-content{max-width:100%;} /* Full width */
+.belowheader .w3-content{max-width:100%;} /* Full width for banners, page headers */
 .segment.breadcrumbsearch{border-bottom:1px solid #eee;} /* display:none to hide breadcrumb and search */
 .segment.contentfull{}
 .segment.contentleft{}
@@ -57,6 +57,7 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 
 /* Containers */
 .w3-container.default{}/* Apply this container to DNN modules */
+.w3-container.default.titled{}/* Same but with the DNN title */
 .w3-container.boxed{padding:0;}
 .w3-container.boxed .containerinner{margin-top: 0 !important;margin-bottom: 0 !important;overflow: auto;}
 .w3-container.unboxed{padding:0;}
