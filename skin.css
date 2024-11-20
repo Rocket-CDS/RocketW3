@@ -35,7 +35,6 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .pageinner{}
 .pageinner .w3-content,.segment.fullwidth .w3-container.default .DNNModuleContent > div,.segment.fullwidth .w3-container.boxed .containerinner{max-width:1280px;margin: auto;} /* Boxed content width on Default skin*/
 .segment.fullwidth .w3-content,.segment.fullwidth .w3-container.unboxed .containerinner{max-width:100%;} /* All single column content panes are full width. The Boxed container boxes the content. The Unboxed stretches the content. */
-.wide .pageinner .w3-content{max-width:100%;} /* Full width for all content on Wide skin */
 .segment{position: relative;box-sizing: border-box;}
 .aboveheader{}
 .aboveheader .w3-content{max-width:100%;} /* Full width */
