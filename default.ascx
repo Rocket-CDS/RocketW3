@@ -94,6 +94,26 @@
 					</div>
 				</div>
 			</div>
+			<div class="segment maincontentleftwide">
+				<div class="w3-content">
+					<div class="w3-row">
+						<div id="contentleftwide" runat="server" class="w3-col l9 m8 s12 contentleftwide" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+						</div>
+						<div id="columnrightnarrow" runat="server" class="w3-col l3 m4 s12 columnrightnarrow" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="segment maincontentrightwide">
+				<div class="w3-content">
+					<div class="w3-row">
+						<div id="columnleftnarrow" runat="server" class="w3-col l3 m4 s12 columnleftnarrow" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+						</div>
+						<div id="contentrightwide" runat="server" class="w3-col l9 m8 s12 contentrightwide" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="segment middlefull fullwidth">
 				<div class="w3-content">
 					<div class="w3-row">
