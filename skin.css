@@ -45,6 +45,8 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .segment.contentfull{}
 .segment.contentleft{}
 .segment.contentright{}
+.segment.contentleftwide{}
+.segment.contentrightwide{}
 .segment.middlefull{}
 .segment.panelshalf{}
 .segment.panelsthird{}
