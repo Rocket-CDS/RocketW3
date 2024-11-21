@@ -1,4 +1,4 @@
-﻿<!-- RocketCDS W3 Theme - Copyright 2023 agence-sesame.fr -->
+<!-- RocketCDS W3 Theme - Copyright 2023 agence-sesame.fr -->
 <%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
 <%@ Register TagPrefix="dnn" TagName="LANGUAGE" Src="~/Admin/Skins/Language.ascx" %>
 <%@ Register TagPrefix="dnn" TagName="LOGO" Src="~/Admin/Skins/Logo.ascx" %>
@@ -25,7 +25,7 @@
 			<div class="segment aboveheader">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="aboveheader" runat="server" class="" containername="RocketW3" containersrc="nocontainer.ascx" containertype="G">
+						<div id="aboveheader" runat="server" class="" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 							<div class="langpane">
 								<dnn:LANGUAGE id="dnnLANGUAGE" runat="server" AlternateTemplate="&lt;a href='[URL]' title='[CULTURE:NATIVENAME]'&gt;[CULTURE:TWOLETTERISOCODE]&lt;/a&gt;" ItemTemplate="&lt;a href='[URL]' title='[CULTURE:NATIVENAME]'&gt;[CULTURE:TWOLETTERISOCODE]&lt;/a&gt;" SelectedItemTemplate="&lt;a href='[URL]' title='[CULTURE:NATIVENAME]' class='langsel'&gt;[CULTURE:TWOLETTERISOCODE]&lt;/a&gt;" showLinks="True" showMenu="False" />
 							</div>
@@ -59,7 +59,7 @@
 			<div class="segment belowheader">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="belowheader" runat="server" class="" containername="RocketW3" containersrc="nocontainer.ascx" containertype="G">
+						<div id="belowheader" runat="server" class="" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
@@ -74,7 +74,7 @@
 						</div>
 						<div class="w3-col l4 m4 s12 search">
 							<div class="w3-container w3-section">
-								<dnn:SEARCH ID="dnnSearch" runat="server" AutoSearchDelayInMilliSecond="200" CssClass="searchbutton" EnableTheming="true" EnableWildSearch="True" MinCharRequired="3" placeholder=".." ShowSite="false" ShowWeb="false" Submit="<i class='fas fa-search'></i>" />
+								<dnn:SEARCH ID="dnnSearch" runat="server" AutoSearchDelayInMilliSecond="200" CssClass="searchbutton" EnableTheming="true" EnableWildSearch="True" MinCharRequired="3" placeholder=".." ShowSite="false" ShowWeb="false" Submit="<i class='material-icons searchicon'>search</i>" />
 							</div>
 						</div>
 					</div>
@@ -84,10 +84,10 @@
 		<!-- End semantic header html tag -->
 		<div class="main">
 			<!-- Begin semantic body html tag -->
-			<div class="segment contentfull">
+			<div class="segment contentfull fullwidth">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="ContentPane" runat="server" class="" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="ContentPane" runat="server" class="" containername="RocketW3" containersrc="boxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
@@ -95,9 +95,9 @@
 			<div class="segment maincontentleft">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="contentleft" runat="server" class="w3-col l8 m8 s12 contentleft" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="contentleft" runat="server" class="w3-col l8 m8 s12 contentleft" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
-						<div id="columnright" runat="server" class="w3-col l4 m4 s12 columnright" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="columnright" runat="server" class="w3-col l4 m4 s12 columnright" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
@@ -105,17 +105,17 @@
 			<div class="segment maincontentright">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="columnleft" runat="server" class="w3-col l4 m4 s12 columnleft" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="columnleft" runat="server" class="w3-col l4 m4 s12 columnleft" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
-						<div id="contentright" runat="server" class="w3-col l8 m8 s12 contentright" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="contentright" runat="server" class="w3-col l8 m8 s12 contentright" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="segment middlefull">
+			<div class="segment middlefull fullwidth">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="middlefull" runat="server" class="" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="middlefull" runat="server" class="" containername="RocketW3" containersrc="boxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
@@ -123,9 +123,9 @@
 			<div class="segment panelshalf">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="panelshalffirst" runat="server" class="w3-col l6 m6 s12 first" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="panelshalffirst" runat="server" class="w3-col l6 m6 s12 first" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
-						<div id="panelshalfsecond" runat="server" class="w3-col l6 m6 s12 second" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="panelshalfsecond" runat="server" class="w3-col l6 m6 s12 second" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
@@ -133,11 +133,11 @@
 			<div class="segment panelsthird">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="panelsthirdfirst" runat="server" class="w3-col l4 m4 s12 first" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="panelsthirdfirst" runat="server" class="w3-col l4 m4 s12 first" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
-						<div id="panelsthirdsecond" runat="server" class="w3-col l4 m4 s12 second" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="panelsthirdsecond" runat="server" class="w3-col l4 m4 s12 second" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
-						<div id="panelsthirdthird" runat="server" class="w3-col l4 m4 s12 third" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="panelsthirdthird" runat="server" class="w3-col l4 m4 s12 third" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
@@ -145,21 +145,21 @@
 			<div class="segment panelsquarter">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="panelsquarterfirst" runat="server" class="w3-col l3 m6 s12 first" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="panelsquarterfirst" runat="server" class="w3-col l3 m6 s12 first" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
-						<div id="panelsquartersecond" runat="server" class="w3-col l3 m6 s12 second" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="panelsquartersecond" runat="server" class="w3-col l3 m6 s12 second" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
-						<div id="panelsquarterthird" runat="server" class="w3-col l3 m6 s12 third" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="panelsquarterthird" runat="server" class="w3-col l3 m6 s12 third" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
-						<div id="panelsquarterfourth" runat="server" class="w3-col l3 m6 s12 fourth" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="panelsquarterfourth" runat="server" class="w3-col l3 m6 s12 fourth" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="segment lowerfull">
+			<div class="segment lowerfull fullwidth">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="lowerfull" runat="server" class="" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="lowerfull" runat="server" class="" containername="RocketW3" containersrc="boxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
@@ -168,38 +168,22 @@
 		<!-- End semantic body html tag -->
 		<div class="footer">
 			<!-- Begin semantic footer html tag -->
-			<div class="segment abovefooter">
-				<div class="w3-content">
-					<div class="w3-row">
-						<div id="abovefooter" runat="server" class="" containername="RocketW3" containersrc="nocontainer.ascx" containertype="G">
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="segment footerthird">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="footerthirdfirst" runat="server" class="w3-col l4 m4 s12 first" containername="RocketW3" containersrc="default.ascx" containertype="G">
-						</div>
-						<div id="footerthirdsecond" runat="server" class="w3-col l4 m4 s12 second" containername="RocketW3" containersrc="default.ascx" containertype="G">
-						</div>
-						<div id="footerthirdthird" runat="server" class="w3-col l4 m4 s12 third" containername="RocketW3" containersrc="default.ascx" containertype="G">
+						<div id="footerthirdfirst" runat="server" class="w3-col l4 m4 s12 first" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+					</div>
+						<div id="footerthirdsecond" runat="server" class="w3-col l4 m4 s12 second" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+				</div>
+						<div id="footerthirdthird" runat="server" class="w3-col l4 m4 s12 third" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="segment footerfull">
+			<div class="segment footerfull fullwidth">
 				<div class="w3-content">
 					<div class="w3-row">
-						<div id="footerfull" runat="server" class="" containername="RocketW3" containersrc="default.ascx" containertype="G">
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="segment belowfooter">
-				<div class="w3-content">
-					<div class="w3-row">
-						<div id="belowfooter" runat="server" class="" containername="RocketW3" containersrc="nocontainer.ascx" containertype="G">
+						<div id="footerfull" runat="server" class="" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
 						</div>
 					</div>
 				</div>
