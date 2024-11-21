@@ -41,7 +41,7 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .segment.mainheader{box-shadow: 0 0 6px #00000070;z-index: 1;min-height:90px;}
 .segment.belowheader{}
 .belowheader .w3-content{max-width:100%;} /* Full width */
-.segment.breadcrumbsearch{border-bottom:1px solid #eee;} /* display:none to hide breadcrumb and search */
+.segment.breadcrumbsearch{border-bottom:1px solid #eee;background: #f9f9f9;} /* display:none to hide breadcrumb and search in Search skin */
 .segment.contentfull{}
 .segment.contentleft{}
 .segment.contentright{}
@@ -66,8 +66,8 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 .searchInputContainer{right:0;margin:0;width:100%;}
 #dnn_dnnSearch_txtSearch{width:100%;border:1px solid #e1e1e1;}
 #dnn_dnnSearch_txtSearch::placeholder{color:transparent;}
-.searchbutton{display:inline-block;position:absolute;right:10px;line-height:30px;}
-.searchicon{height:1.5em;}
+.searchbutton{display:inline-block;position:absolute;right:10px;}
+.searchicon{vertical-align: middle;}
 
 /* Misc */
 .logopane img{display:block;margin:20px 0;max-width: 320px;max-height: 60px;}
