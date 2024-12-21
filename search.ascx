@@ -214,7 +214,7 @@
 			<div class="w3-content">
 				<div class="w3-row">
 					<div class="w3-container w3-padding-24">
-						<dnn:COPYRIGHT ID="dnnCopyright" runat="server" CssClass=" " />&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/mentions-legales">Mentions L&eacute;gales</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<dnn:LOGIN ID="dnnLogin" runat="server" CssClass=" " />
+						<dnn:COPYRIGHT ID="dnnCopyright" runat="server" CssClass=" " />&nbsp;&nbsp;|&nbsp;&nbsp;<dnn:LOGIN ID="dnnLogin" runat="server" CssClass=" " />
 					</div>
 				</div>
 			</div>
