@@ -1,0 +1,129 @@
+@using DotNetNuke.Web.MvcPipeline.Models
+@using DotNetNuke.Web.MvcPipeline.Skins
+@using DotNetNuke.Web.DDRMenu
+@using DNNrocket.MVC;
+@model PageModel
+
+@{
+    
+}
+
+
+@section head {    
+    @* CSS & JS includes *@
+    @Html.SkinPartial("partials/_includes")
+}
+
+Here: @RocketSkinHelper.Testing()
+
+<div class="aperture-theme">
+    <!-- Header/NavBar -->
+    @Html.SkinPartial("partials/_header")
+    
+    <!-- Main Content -->
+	<main class="aperture-main">
+        @Html.Pane(id: "BannerPane")
+        @Html.Pane(id: "FluidPane")
+    </main>
+
+
+		<div class="main">
+			<!-- Begin semantic body html tag -->
+			<div class="segment contentfull fullwidth">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "ContentPane")
+					</div>
+				</div>
+			</div>
+			<div class="segment maincontentleft">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "contentleft", cssClass: "w3-col l8 m8 s12 contentleft")
+                        @Html.Pane(id: "columnright", cssClass: "w3-col l4 m4 s12 columnright")                   
+					</div>
+				</div>
+			</div>
+			<div class="segment maincontentright">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "columnleft", cssClass: "w3-col l4 m4 s12 columnleft")                   
+                        @Html.Pane(id: "contentright", cssClass: "w3-col l8 m8 s12 contentright")
+					</div>
+				</div>
+			</div>
+			<div class="segment maincontentleftwide">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "contentleftwide", cssClass: "w3-col l9 m8 s12 contentleftwide")                   
+                        @Html.Pane(id: "columnrightnarrow", cssClass: "w3-col l3 m4 s12 columnrightnarrow")                   
+					</div>
+				</div>
+			</div>
+			<div class="segment maincontentrightwide">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "columnleftnarrow", cssClass: "w3-col l3 m4 s12 columnleftnarrow")
+                        @Html.Pane(id: "contentrightwide", cssClass: "w3-col l9 m8 s12 contentrightwide")
+					</div>
+				</div>
+			</div>
+			<div class="segment middlefull fullwidth">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "middlefull", cssClass: "")
+					</div>
+				</div>
+			</div>
+			<div class="segment panelshalf">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "panelshalffirst", cssClass: "w3-col l6 m6 s12 first")
+                        @Html.Pane(id: "panelshalfsecond", cssClass: "w3-col l6 m6 s12 second")
+					</div>
+				</div>
+			</div>
+			<div class="segment panelsthird">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "panelsthirdfirst", cssClass: "w3-col l4 m4 s12 first")
+                        @Html.Pane(id: "panelsthirdsecond", cssClass: "w3-col l4 m4 s12 second")
+                        @Html.Pane(id: "panelsthirdthird", cssClass: "w3-col l4 m4 s12 third")
+					</div>
+				</div>
+			</div>
+			<div class="segment panelsquarter">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "panelsquarterfirst", cssClass: "w3-col l3 m6 s12 first")
+                        @Html.Pane(id: "panelsquartersecond", cssClass: "w3-col l3 m6 s12 second")
+                        @Html.Pane(id: "panelsquarterthird", cssClass: "w3-col l3 m6 s12 third")
+                        @Html.Pane(id: "panelsquarterfourth", cssClass: "w3-col l3 m6 s12 fourth")
+					</div>
+				</div>
+			</div>
+			<div class="segment lowerfull fullwidth">
+				<div class="w3-content">
+					<div class="w3-row">
+                        @Html.Pane(id: "lowerfull", cssClass: "")
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+    <!-- Footer -->
+    @Html.SkinPartial("partials/_footer")
+</div>
+
+
+
+@{
+    // Context.Response.AddHeader("Content-Security-Policy", Model.ContentSecurityPolicy.GeneratePolicy());
+    Context.Response.AddHeader("X-XSS-Protection", "1; mode=block");
+    Context.Response.AddHeader("X-Content-Type-Options", "nosniff");
+    Context.Response.AddHeader("Referrer-Policy", "same-origin");
+    Context.Response.AddHeader("Permissions-Policy", "camera=self");
+    Context.Response.AddHeader("Strict-Transport-Security", "max-age=2592000");
+} 

@@ -1,6 +1,6 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="Nevoweb.Skins.RocketW3" type="Skin" version="01.00.01">
+    <package name="Nevoweb.Skins.RocketW3" type="Skin" version="01.00.02">
       <friendlyName>RocketW3</friendlyName>
       <description>A responsive DNN skin for W3.CSS</description>
       <owner>
@@ -27,7 +27,7 @@
       </components>
     </package>
     
-    <package name="Nevoweb.Containers.RocketW3" type="Container" version="01.00.00">
+    <package name="Nevoweb.Containers.RocketW3" type="Container" version="01.00.02">
       <friendlyName>RocketW3</friendlyName>
       <description>Containers for the RocketW3 Theme package.</description>
       <owner>
