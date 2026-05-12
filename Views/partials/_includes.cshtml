@@ -1,0 +1,16 @@
+@using DotNetNuke.Web.MvcPipeline.Models
+@using DotNetNuke.Web.MvcPipeline.Skins
+
+@model PageModel
+
+@{
+    @Html.Meta(name: "viewport", content: "width=device-width, initial-scale=1.0")
+    
+    @* Exclude default DNN CSS *@
+    @Html.DnnCssExclude("dnndefault")
+	   
+    @* Include skin CSS and JS *@
+    @Html.DnnCssInclude(filePath: "w3.css", pathNameAlias: "SkinPath", priority: 110)
+    @Html.DnnCssInclude(filePath: "skin.css", pathNameAlias: "SkinPath", priority: 111)
+
+} 

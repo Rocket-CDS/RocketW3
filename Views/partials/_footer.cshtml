@@ -1,0 +1,40 @@
+@using DotNetNuke.Web.MvcPipeline.Models
+@using DotNetNuke.Web.MvcPipeline.Skins
+@using DotNetNuke.Web.DDRMenu
+
+@model PageModel
+
+
+<div class="footer">
+    <!-- Begin semantic footer html tag -->
+    <div class="segment footerthird">
+        <div class="w3-content">
+            <div class="w3-row">
+                <div id="footerthirdfirst" runat="server" class="w3-col l4 m4 s12 first" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+                </div>
+                <div id="footerthirdsecond" runat="server" class="w3-col l4 m4 s12 second" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+                </div>
+                <div id="footerthirdthird" runat="server" class="w3-col l4 m4 s12 third" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="segment footerfull fullwidth">
+        <div class="w3-content">
+            <div class="w3-row">
+                <div id="footerfull" runat="server" class="" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End semantic footer html tag -->
+<div class="segment copyright">
+    <div class="w3-content">
+        <div class="w3-row">
+            <div class="w3-container w3-padding-24">
+                @Html.Copyright()&nbsp;&nbsp;|&nbsp;&nbsp;@Html.Login()
+            </div>
+        </div>
+    </div>
+</div>

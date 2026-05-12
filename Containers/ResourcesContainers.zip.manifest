@@ -1,0 +1,36 @@
+﻿<dotnetnuke type="ResourceFile" version="5.0">
+  <files>
+    <file>
+      <path />
+      <name>boxed.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>default.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>titled.ascx</name>
+    </file>
+    <file>
+      <path />
+      <name>unboxed.ascx</name>
+    </file>
+    <file>
+      <path>Views/</path>
+      <name>boxed.cshtml</name>
+    </file>
+    <file>
+      <path>Views/</path>
+      <name>default.cshtml</name>
+    </file>
+    <file>
+      <path>Views/</path>
+      <name>titled.cshtml</name>
+    </file>
+    <file>
+      <path>Views/</path>
+      <name>unboxed.cshtml</name>
+    </file>
+  </files>
+</dotnetnuke>
