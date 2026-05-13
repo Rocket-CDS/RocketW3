@@ -9,10 +9,9 @@
     <div class="segment aboveheader">
         <div class="w3-content">
             <div class="w3-row">
-                <div id="aboveheader" runat="server" class="" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
-                    <div class="langpane">
-                        @Html.Language(alternateTemplate: "<a href='[URL]' title='[CULTURE:NATIVENAME]'>[CULTURE:TWOLETTERISOCODE]</a>", itemTemplate: "<a href='[URL]' title='[CULTURE:NATIVENAME]'>[CULTURE:TWOLETTERISOCODE]</a>", selectedItemTemplate: "<a href='[URL]' title='[CULTURE:NATIVENAME]' class='langsel'>[CULTURE:TWOLETTERISOCODE]</a>", showLinks: true, showMenu: false)
-                    </div>
+                @Html.Pane(id: "aboveheader", cssClass: "")
+                <div class="langpane">
+                    @Html.Language(alternateTemplate: "<a href='[URL]' title='[CULTURE:NATIVENAME]'>[CULTURE:TWOLETTERISOCODE]</a>", itemTemplate: "<a href='[URL]' title='[CULTURE:NATIVENAME]'>[CULTURE:TWOLETTERISOCODE]</a>", selectedItemTemplate: "<a href='[URL]' title='[CULTURE:NATIVENAME]' class='langsel'>[CULTURE:TWOLETTERISOCODE]</a>", showLinks: true, showMenu: false)
                 </div>
             </div>
         </div>
@@ -45,8 +44,7 @@
     <div class="segment belowheader">
         <div class="w3-content">
             <div class="w3-row">
-                <div id="belowheader" runat="server" class="" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
-                </div>
+                @Html.Pane(id: "belowheader", cssClass: "")
             </div>
         </div>
     </div>

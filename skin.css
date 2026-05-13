@@ -33,7 +33,14 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 /* Main sections */
 .pageouter{}
 .pageinner{}
-.pageinner .w3-content,.segment.fullwidth .w3-container.default .DNNModuleContent > div,.segment.fullwidth .w3-container.boxed .containerinner{max-width:1280px;margin: auto;} /* Boxed content width on Default skin*/
+.pageinner .w3-content,
+.segment.fullwidth .w3-container.default > div[id$="ContentPane"] > div > div:not(.containerouter),
+.segment.fullwidth .w3-container.default .ModRocketContentRazorC > div:not(.containerouter),
+.segment.fullwidth .w3-container.default .containerouter > .containerinner,
+.segment.fullwidth .w3-container.boxed .containerinner{
+max-width:1280px;
+margin:auto;
+} /* Boxed content width on Default skin */
 .segment.fullwidth .w3-content,.segment.fullwidth .w3-container.unboxed .containerinner{max-width:100%;} /* All single column content panes are full width. The Boxed container boxes the content. The Unboxed stretches the content. */
 .segment{position: relative;box-sizing: border-box;}
 .aboveheader{}
@@ -58,6 +65,19 @@ a.breadcrumbLink:active, a.breadcrumbLink:hover{color:#333;}
 
 /* Containers */
 .w3-container.default{}/* Apply this container to DNN modules */
+.segment.fullwidth .w3-container.default{padding:0;} /* Match boxed container behavior in fullwidth panes */
+.segment.fullwidth .w3-container.default .containerinner{margin-top:0 !important;margin-bottom:0 !important;overflow:auto;} /* Remove w3-section vertical gaps in MVC fullwidth */
+.segment.contentfull.fullwidth #dnn_ContentPane.dnnPane,
+.segment.contentfull.fullwidth #dnn_ContentPane > .DnnModule,
+.segment.contentfull.fullwidth #dnn_ContentPane .ModRocketContentRazorC{
+margin-top:0 !important;
+margin-bottom:0 !important;
+padding-top:0 !important;
+padding-bottom:0 !important;
+} /* Normalize MVC wrapper spacing to match WebForms */
+
+.segment.contentfull.fullwidth #dnn_ContentPane .ModRocketContentRazorC .containerinner > :first-child{margin-top:0 !important;}
+.segment.contentfull.fullwidth #dnn_ContentPane .ModRocketContentRazorC .containerinner > :last-child{margin-bottom:0 !important;} /* Remove only boundary margins to avoid changing internal layout */
 .w3-container.boxed{padding:0;}
 .w3-container.boxed .containerinner{margin-top: 0 !important;margin-bottom: 0 !important;overflow: auto;}
 .w3-container.unboxed{padding:0;}

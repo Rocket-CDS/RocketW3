@@ -10,20 +10,16 @@
     <div class="segment footerthird">
         <div class="w3-content">
             <div class="w3-row">
-                <div id="footerthirdfirst" runat="server" class="w3-col l4 m4 s12 first" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
-                </div>
-                <div id="footerthirdsecond" runat="server" class="w3-col l4 m4 s12 second" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
-                </div>
-                <div id="footerthirdthird" runat="server" class="w3-col l4 m4 s12 third" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
-                </div>
+                @Html.Pane(id: "footerthirdfirst", cssClass: "w3-col l4 m4 s12 first")
+                @Html.Pane(id: "footerthirdsecond", cssClass: "w3-col l4 m4 s12 second")
+                @Html.Pane(id: "footerthirdthird", cssClass: "w3-col l4 m4 s12 third")
             </div>
         </div>
     </div>
     <div class="segment footerfull fullwidth">
         <div class="w3-content">
             <div class="w3-row">
-                <div id="footerfull" runat="server" class="" containername="RocketW3" containersrc="unboxed.ascx" containertype="G">
-                </div>
+                @Html.Pane(id: "footerfull", cssClass: "")
             </div>
         </div>
     </div>
